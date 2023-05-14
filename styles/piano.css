@@ -1,0 +1,62 @@
+.piano {
+  grid-column: span 2;
+
+  position: relative;
+
+  margin: 0 auto;
+  width: fit-content;
+
+  display: flex;
+}
+
+.tecla {
+  width: 40px;
+  height: 120px;
+  border: 1px solid gray;
+  border-right: 0;
+  border-radius: 0 0 5px 5px;
+
+  background-color: white;
+  box-shadow: 0 3px 2px rgba(0, 0, 0, 0.7);
+
+  cursor: pointer;
+
+  transition: all 25ms;
+}
+
+.tecla:last-child {
+  border-right: 1px solid gray;
+}
+
+.sus {
+  width: 20px;
+  height: 70px;
+
+  background-color: black;
+
+  position: absolute;
+}
+
+.tecla--pressionada {
+  background-color: rgb(53, 107, 151);
+}
+
+.sus:nth-child(2) {
+  left: 30px;
+}
+
+.sus:nth-child(4) {
+  left: 70px;
+}
+
+.sus:nth-child(7) {
+  left: 150px;
+}
+
+.sus:nth-child(9) {
+  left: 190px;
+}
+
+.sus:nth-child(11) {
+  left: 230px;
+}
