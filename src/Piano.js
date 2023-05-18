@@ -1,8 +1,9 @@
 export class Piano {
-  constructor() {
+  constructor(partitura) {
     this.timeoutAudios = {};
     this.audios = [];
     this.teclas = [];
+    this.partitura = partitura;
     const audios = document.querySelectorAll('audio');
     const teclas = document.querySelectorAll('.tecla');
     audios.forEach((audio) => this.audios.push(audio));
@@ -22,6 +23,8 @@ export class Piano {
     if(!audioNota.paused) audioNota.currentTime = 0;
     audioNota.play();
     target.classList.add('tecla--pressionada');
+
+    this.partitura.adicionarNota(audioNota.dataset.nota);
   }
 
   soltarTecla({ target }) {

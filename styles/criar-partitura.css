@@ -99,7 +99,7 @@
 }
 
 .principal__botao_salvar,
-.principal__botao_imprimir {
+.principal__botao_baixar {
   align-self: flex-end;
   font-family: 'Barlow';
 
@@ -130,11 +130,11 @@
   color: whitesmoke;
 }
 
-.principal__botao_imprimir {
+.principal__botao_baixar {
   border: 2px solid rgb(54, 96, 151);
 }
 
-.principal__botao_imprimir:hover {
+.principal__botao_baixar:hover {
   background-color: rgb(54, 96, 151);
   color: whitesmoke;
 }

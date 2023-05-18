@@ -15,6 +15,7 @@
   <link rel="stylesheet" href="styles/header.css">
   <link rel="stylesheet" href="styles/criar-partitura.css">
   <link rel="stylesheet" href="styles/piano.css">
+  <link rel="stylesheet" href="styles/criar-partitura-baixar.css" media="print">
 
   <script src="src/main.js" type="module" defer></script>
   <script src="src/autosize-input.js" defer></script>
@@ -47,116 +48,7 @@
     <h2 class="principal__titulo">Criar Nova Partitura</h2>
     <section class="principal__partitura">
       <div class="partitura__grupo">
-        <div class="partitura__linha">
-          <span class="partitura__nota">Dó</span>
-          <span class="partitura__nota">Sol</span>
-          <span class="partitura__nota">Dó</span>
-          <span class="partitura__nota">Sol</span>
-          <span class="partitura__nota">Dó</span>
-          <span class="partitura__nota">Sol</span>
-          <span class="partitura__nota">Sol</span>
-          <span class="partitura__nota">Sol</span>
-          <span class="partitura__nota">Sol</span>
-          <span class="partitura__nota">Sol</span>
-          <span class="partitura__nota">Sol</span>
-          <span class="partitura__nota">Sol</span>
-          <span class="partitura__nota">Sol</span>
-          <span class="partitura__nota">Sol</span>
-        </div>
-        <div class="partitura__linha">
-          <span class="partitura__nota">Dó</span>
-          <span class="partitura__nota">Sol</span>
-          <span class="partitura__nota">Dó</span>
-          <span class="partitura__nota">Sol</span>
-          <span class="partitura__nota">Dó</span>
-          <span class="partitura__nota">Sol</span>
-          <span class="partitura__nota">Sol</span>
-          <span class="partitura__nota">Sol</span>
-        </div>
-      </div>
-      <div class="partitura__grupo">
-        <div class="partitura__linha">
-          <span class="partitura__nota">Dó</span>
-          <span class="partitura__nota">Sol</span>
-          <span class="partitura__nota">Dó</span>
-          <span class="partitura__nota">Sol</span>
-          <span class="partitura__nota">Dó</span>
-          <span class="partitura__nota">Sol</span>
-          <span class="partitura__nota">Sol</span>
-          <span class="partitura__nota">Sol</span>
-          <span class="partitura__nota">Sol</span>
-          <span class="partitura__nota">Sol</span>
-          <span class="partitura__nota">Sol</span>
-          <span class="partitura__nota">Sol</span>
-          <span class="partitura__nota">Sol</span>
-          <span class="partitura__nota">Sol</span>
-        </div>
-        <div class="partitura__linha">
-          <span class="partitura__nota">Dó</span>
-          <span class="partitura__nota">Sol</span>
-          <span class="partitura__nota">Dó</span>
-          <span class="partitura__nota">Sol</span>
-          <span class="partitura__nota">Dó</span>
-          <span class="partitura__nota">Sol</span>
-          <span class="partitura__nota">Sol</span>
-          <span class="partitura__nota">Sol</span>
-        </div>
-      </div>
-      <div class="partitura__grupo">
-        <div class="partitura__linha">
-          <span class="partitura__nota">Dó</span>
-          <span class="partitura__nota">Sol</span>
-          <span class="partitura__nota">Dó</span>
-          <span class="partitura__nota">Sol</span>
-          <span class="partitura__nota">Dó</span>
-          <span class="partitura__nota">Sol</span>
-          <span class="partitura__nota">Sol</span>
-          <span class="partitura__nota">Sol</span>
-          <span class="partitura__nota">Sol</span>
-          <span class="partitura__nota">Sol</span>
-          <span class="partitura__nota">Sol</span>
-          <span class="partitura__nota">Sol</span>
-          <span class="partitura__nota">Sol</span>
-          <span class="partitura__nota">Sol</span>
-        </div>
-        <div class="partitura__linha">
-          <span class="partitura__nota">Dó</span>
-          <span class="partitura__nota">Sol</span>
-          <span class="partitura__nota">Dó</span>
-          <span class="partitura__nota">Sol</span>
-          <span class="partitura__nota">Dó</span>
-          <span class="partitura__nota">Sol</span>
-          <span class="partitura__nota">Sol</span>
-          <span class="partitura__nota">Sol</span>
-        </div>
-      </div>
-      <div class="partitura__grupo">
-        <div class="partitura__linha">
-          <span class="partitura__nota">Dó</span>
-          <span class="partitura__nota">Sol</span>
-          <span class="partitura__nota">Dó</span>
-          <span class="partitura__nota">Sol</span>
-          <span class="partitura__nota">Dó</span>
-          <span class="partitura__nota">Sol</span>
-          <span class="partitura__nota">Sol</span>
-          <span class="partitura__nota">Sol</span>
-          <span class="partitura__nota">Sol</span>
-          <span class="partitura__nota">Sol</span>
-          <span class="partitura__nota">Sol</span>
-          <span class="partitura__nota">Sol</span>
-          <span class="partitura__nota">Sol</span>
-          <span class="partitura__nota">Sol</span>
-        </div>
-        <div class="partitura__linha">
-          <span class="partitura__nota">Dó</span>
-          <span class="partitura__nota">Sol</span>
-          <span class="partitura__nota">Dó</span>
-          <span class="partitura__nota">Sol</span>
-          <span class="partitura__nota">Dó</span>
-          <span class="partitura__nota">Sol</span>
-          <span class="partitura__nota">Sol</span>
-          <span class="partitura__nota">Sol</span>
-        </div>
+        <div class="partitura__linha partitura__linha--selected"></div>
       </div>
     </section>
     <input class="principal__nome_partitura" type="text" value="Nova Partitura 1">
@@ -178,7 +70,7 @@
       <span class="material-symbols-outlined">save</span>
       <span>Salvar Partitura</span>
     </button>
-    <button class="principal__botao_imprimir">
+    <button class="principal__botao_baixar">
       <span class="material-symbols-outlined">download</span>
       <span>Baixar Partitura</span>
     </button>
